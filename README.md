@@ -7,5 +7,5 @@ the SpeechSynthesisUtterance to say or "sing" every picked number, my nephew is 
 It was a funny time with my nephew, and I think the result is good enought to present it to you now,
 I hope you can enjoy it as much I enjoyed coding it!
 
-PS: All the original script was coded in pure JavaScript, to public it I decided add to it
+PS: All the original script was coded in pure JavaScript, to publish it I decided add to it
 my own Vue dialogs custom component just for some aesthetical considerations.
