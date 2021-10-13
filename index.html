@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>BingOscar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/oa-dialogs.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<main>
+	<!-- title letters: BINGO -->
+	<ul class="table grey">
+		<li class="padded">B</li>
+		<li class="padded">I</li>
+		<li class="padded">N</li>
+		<li class="padded">G</li>
+		<li class="padded">O</li>
+	</ul>
+
+	<!-- numbers -->
+	<ul class="table">
+		<li id="col1"></li>
+		<li id="col2"></li>
+		<li id="col3"></li>
+		<li id="col4"></li>
+		<li id="col5"></li>
+	</ul>
+
+	<button id="btn-play" class="btn pointer" onclick="App.play()">Get number</button>
+</main>
+
+<section id="banner" class="banner">
+	<button class="btn pointer" onclick="App.playAgain()">Play again!</button>
+</section>
+
+<!-- instead JS alert() I'm using my own Vue component oa-dialogs -->
+<section id="app">
+	<oa-dialogs ref="dialogs"></oa-dialogs>
+</section>
+
+<script src="js/vue.3.2.12.js"></script>
+<script src="js/oa-dialogs.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

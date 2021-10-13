@@ -1,0 +1,94 @@
+.main{
+	background-color: #fafafa;
+}
+
+.padded{
+	padding: 10px;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.grey{
+	background-color: #ddd;
+}
+
+.table{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #ccc;
+	
+}
+
+.table > li{
+	flex: 1;
+	text-align: center;
+	border-left: solid 1px #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.table > li:first-child{
+	border-left: none;
+}
+
+.numbers{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.numbers > li{
+	background-color: #fff;
+	padding: 1em 0;
+	border-top: solid 1px #ccc;
+}
+
+.numbers > li:first-child{
+	border-top: none
+}
+
+.numbers > li.selected{
+	background-color: #000;
+	color: #fff;
+}
+
+.btn{
+	display: block;
+	margin: 1em auto 0;
+	padding: 1em 2em;
+	border: solid 1px teal;
+	border-radius: .4em;
+	background-color: teal;
+	color: #fff;
+	font-size: 1em;
+	box-shadow: 0 0 .5em #555;
+}
+
+.banner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: url(../img/banner.svg) center center no-repeat rgba(0, 0, 255, .25);
+	background-size: 100% auto;
+	opacity: 0;
+	visibility: hidden;
+	animation: all .6s ease-in;
+}
+
+.banner.active{
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+.banner > button{
+	margin: 50% auto;
+	box-shadow: 0 0 .5em #fff;
+	background-color: #4D7AFF;
+}
